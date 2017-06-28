@@ -34,8 +34,7 @@ header{ background:#f0f3f5; height:50px;
 	padding: 10px 22px;
   margin: 0px 10px 10px 0px;
   float: left;
-	border-radius: 10px;
-	font-family: 'Pacifico', cursive;
+	
 	font-size: 20px;
 	color: #FFF;
 	text-decoration: none;	
@@ -138,9 +137,7 @@ header{ background:#f0f3f5; height:50px;
 table {
   border-collapse: separate;
   background:#fff;
-  @include border-radius(5px);
   margin:50px auto;
-  @include box-shadow(0px 0px 5px rgba(0,0,0,0.3));
 }
 
 thead {
@@ -152,7 +149,6 @@ thead th {
   font-size:16px;
   font-weight:400;
   color:#0C1114;
-  @include text-shadow(1px 1px 0px rgba(0,0,0,0.5));
   text-align:left;
   padding:20px;
   background:#CFD9E0;
@@ -192,7 +188,6 @@ tbody tr:last-child td {
 }
 
 tbody:hover > tr td {
-  @include opacity(0.5);
   
   /* uncomment for blur effect */
   /* color:transparent;
@@ -200,9 +195,7 @@ tbody:hover > tr td {
 }
 
 tbody:hover > tr:hover td {
-  @include text-shadow(none);
   color:#2d2d2d;
-  @include opacity(1.0);
 }
 footer{ 
   position:absolute; 

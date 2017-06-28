@@ -154,13 +154,7 @@ thead th {
   background:#CFD9E0;
   border-top:1px solid #858d99;
   
-  &:first-child {
-   @include border-top-left-radius(5px); 
-  }
 
-  &:last-child {
-    @include border-top-right-radius(5px); 
-  }
 }
 
 tbody tr td {

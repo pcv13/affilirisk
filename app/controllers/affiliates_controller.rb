@@ -12,12 +12,16 @@ class AffiliatesController < ApplicationController
   # GET /affiliates/1.json
   def show
       @offers = Offer.all
-      @offers = Offer.where(ownerID:@affiliate.id)
       @MyC = @offers.where(finalStatus:0)
+
+      @offers = Offer.where(ownerID:@affiliate.id)
       @M=0
+      @text=""
+      @textS=""
       @MyC.each do |money|
           @M =money.revenue + @M
       end  
+ 
   end
 
   # GET /affiliates/new

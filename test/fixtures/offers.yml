@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  ownerID: 
+  installs: 
+  revenue: 
+  risk: 
+  finalStatus: 
+  comment1: MyString
+  comment2: MyString
+
+two:
+  name: MyString
+  ownerID: 
+  installs: 
+  revenue: 
+  risk: 
+  finalStatus: 
+  comment1: MyString
+  comment2: MyString

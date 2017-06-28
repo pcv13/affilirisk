@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @offer.name %>
+</p>
+
+<p>
+  <strong>Ownerid:</strong>
+  <%= @offer.ownerID %>
+</p>
+
+<p>
+  <strong>Installs:</strong>
+  <%= @offer.installs %>
+</p>
+
+<p>
+  <strong>Revenue:</strong>
+  <%= @offer.revenue %>
+</p>
+
+<p>
+  <strong>Risk:</strong>
+  <%= @offer.risk %>
+</p>
+
+<p>
+  <strong>Finalstatus:</strong>
+  <%= @offer.finalStatus %>
+</p>
+
+<p>
+  <strong>Comment1:</strong>
+  <%= @offer.comment1 %>
+</p>
+
+<p>
+  <strong>Comment2:</strong>
+  <%= @offer.comment2 %>
+</p>
+
+<%= link_to 'Edit', edit_offer_path(@offer) %> |
+<%= link_to 'Back', offers_path %>

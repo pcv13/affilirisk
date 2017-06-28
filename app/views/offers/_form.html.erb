@@ -1,0 +1,57 @@
+<%= form_for(offer) do |f| %>
+  <% if offer.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(offer.errors.count, "error") %> prohibited this offer from being saved:</h2>
+
+      <ul>
+      <% offer.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ownerID %>
+    <%= f.text_field :ownerID %>
+  </div>
+
+  <div class="field">
+    <%= f.label :installs %>
+    <%= f.text_field :installs %>
+  </div>
+
+  <div class="field">
+    <%= f.label :revenue %>
+    <%= f.text_field :revenue %>
+  </div>
+
+  <div class="field">
+    <%= f.label :risk %>
+    <%= f.text_field :risk %>
+  </div>
+
+  <div class="field">
+    <%= f.label :finalStatus %>
+    <%= f.text_field :finalStatus %>
+  </div>
+
+  <div class="field">
+    <%= f.label :comment1 %>
+    <%= f.text_field :comment1 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :comment2 %>
+    <%= f.text_field :comment2 %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

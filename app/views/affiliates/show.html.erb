@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @affiliate.name %>
+</p>
+
+<p>
+  <strong>Logolink:</strong>
+  <%= @affiliate.logoLink %>
+</p>
+
+<p>
+  <strong>Moneyconfirmed:</strong>
+  <%= @affiliate.moneyConfirmed %>
+</p>
+
+<p>
+  <strong>offers:</strong>
+    <% @offers.each do |offer| %>
+      
+        <td><%= offer.id %></td>
+    <% end %>
+</p>
+
+<%= link_to 'Edit', edit_affiliate_path(@affiliate) %> |
+<%= link_to 'Back', affiliates_path %>

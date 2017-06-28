@@ -16,10 +16,13 @@
     <%= f.text_field :name %>
   </div>
 
-  <div class="field">
-    <%= f.label :ownerID %>
-    <%= f.text_field :ownerID %>
-  </div>
+    <div class="field select_create">
+      <%= f.label :ownerID %><br>
+        <%= f.select(:ownerID) do %>
+        <% [['AdsFast','1'],['Appave','2'],['Dobermanmedia','3'],['Doozymob','4'],['Eway','5'],['Flame Digital	','6'],['Iwoop','7'],['Jungletap','8'],['Lollitap','9'],['Mobaloo','10'],['Mobiletraffic','11'],['Mobiplay','12'],['Mobtray','13'],['Mobupps','14'],['Offerseven','15'],['Playbeat','16'],['Rulead','17'],['Smartlead','18'],['Somoto','19'],['Sparklemob','20'],['Spyke Media	','21'],['Stingrad','22'],['Tapgerine','24'],].each do |c| -%>
+          <%= content_tag(:option, c.first, value: c.last) %>
+        <% end %>
+      <% end %>  </div>
 
   <div class="field">
     <%= f.label :installs %>
@@ -63,8 +66,6 @@
     <%= f.label :comment2 %>
     <%= f.text_field :comment2 %>
   </div>
-
-
 
   <div class="field">
     <%= f.label :subComent2 %>

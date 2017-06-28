@@ -141,7 +141,7 @@ table {
 }
 
 thead {
-  @include border-radius(5px);
+ 
 }
 
 thead th {
@@ -179,12 +179,7 @@ tbody tr:nth-child(2n) {
 
 tbody tr:last-child td {
   border-bottom:none;
-  &:first-child {
-    @include border-bottom-left-radius(5px);
-  }
-  &:last-child {
-    @include border-bottom-right-radius(5px);
-  }
+
 }
 
 tbody:hover > tr td {

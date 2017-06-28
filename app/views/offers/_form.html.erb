@@ -31,15 +31,23 @@
     <%= f.text_field :revenue %>
   </div>
 
-  <div class="field">
-    <%= f.label :risk %>
-    <%= f.text_field :risk %>
-  </div>
+    <div class="field select_create">
+      <%= f.label :risk %><br>
+        <%= f.select(:risk) do %>
+        <% [['U','0'],['L','1'],['M','2'],['H','3'],['VH','4'],].each do |c| -%>
+          <%= content_tag(:option, c.first, value: c.last) %>
+        <% end %>
+      <% end %>  </div>
 
-  <div class="field">
-    <%= f.label :finalStatus %>
-    <%= f.text_field :finalStatus %>
-  </div>
+    <div class="field select_create">
+      <%= f.label :finalStatus %><br>
+        <%= f.select(:finalStatus) do %>
+        <% [['Confirmed','0'],['Hold','1'],['Reduction','2'],].each do |c| -%>
+          <%= content_tag(:option, c.first, value: c.last) %>
+        <% end %>
+      <% end %>  </div>
+
+
 
   <div class="field">
     <%= f.label :comment1 %>

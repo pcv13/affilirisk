@@ -13,6 +13,11 @@ class AffiliatesController < ApplicationController
   def show
       @offers = Offer.all
       @offers = Offer.where(ownerID:@affiliate.id)
+      @MyC = @offers.where(finalStatus:0)
+      @M=0
+      @MyC.each do |money|
+          @M =money.revenue + @M
+      end  
   end
 
   # GET /affiliates/new

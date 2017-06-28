@@ -53,7 +53,7 @@
     <div class="field select_create">
       <%= f.label :comment1 %><br>
         <%= f.select(:comment1) do %>
-        <% [['Duplicated IP','Duplicated IP'],['RR=0%','RR=0%'],['Traffic Restrictions','Traffic Restrictions'],['High CR','High CR'],['Incent Traffic','Incent Traffic'],['Suspicius install s time','Suspicius install s time'],['Hourcy CR','Hourcy CR'],['KPI','KPI'],['No in-App Activity','No in-App Activity'],['Click-Spamming','Click-Spamming'],['Time betwen installs','Time betwen installs'],['Wrong GEO','Wrong GEO'],['Overcapping','Overcapping'],['No Issues Detected','No Issues Detected'],['KPI issues detected','KPI issues detected'],['KPI accomplished','KPI accomplished'],['Good RR','Good RR'],].each do |c| -%>
+        <% [['Duplicated IPs','Duplicated IPs'],['RR=0%','RR=0%'],['Traffic Restrictions','Traffic Restrictions'],['High CR','High CR'],['Incent Traffic','Incent Traffic'],['Suspicious installs time','Suspicious installs time'],['Hourly CR','Hourly CR'],['KPI','KPI'],['No in-App Activity','No in-App Activity'],['Click-Spamming','Click-Spamming'],['Time between installs','Time between installs'],['Wrong GEO','Wrong GEO'],['Overcapping','Overcapping'],['No Issues Detected','No Issues Detected'],['KPI issues detected','KPI issues detected'],['KPI accomplished','KPI accomplished'],['Good RR','Good RR'],].each do |c| -%>
           <%= content_tag(:option, c.first, value: c.last) %>
         <% end %>
       <% end %>  </div>
@@ -65,13 +65,14 @@
     <%= f.text_field :subComent1 %>
   </div>
 
-<div class="field select_create">
-      <%= f.label :comment2 %><br>
+    <div class="field select_create">
+      <%= f.label :comment12 %><br>
         <%= f.select(:comment2) do %>
-        <% [['Duplicated IP','Duplicated IP'],['RR=0%','RR=0%'],['Traffic Restrictions','Traffic Restrictions'],['High CR','High CR'],['Incent Traffic','Incent Traffic'],['Suspicius install s time','Suspicius install s time'],['Hourcy CR','Hourcy CR'],['KPI','KPI'],['No in-App Activity','No in-App Activity'],['Click-Spamming','Click-Spamming'],['Time betwen installs','Time betwen installs'],['Wrong GEO','Wrong GEO'],['Overcapping','Overcapping'],['No Issues Detected','No Issues Detected'],['KPI issues detected','KPI issues detected'],['KPI accomplished','KPI accomplished'],['Good RR','Good RR'],].each do |c| -%>
+        <% [['Duplicated IPs','Duplicated IPs'],['RR=0%','RR=0%'],['Traffic Restrictions','Traffic Restrictions'],['High CR','High CR'],['Incent Traffic','Incent Traffic'],['Suspicious installs time','Suspicious installs time'],['Hourly CR','Hourly CR'],['KPI','KPI'],['No in-App Activity','No in-App Activity'],['Click-Spamming','Click-Spamming'],['Time between installs','Time between installs'],['Wrong GEO','Wrong GEO'],['Overcapping','Overcapping'],['No Issues Detected','No Issues Detected'],['KPI issues detected','KPI issues detected'],['KPI accomplished','KPI accomplished'],['Good RR','Good RR'],].each do |c| -%>
           <%= content_tag(:option, c.first, value: c.last) %>
         <% end %>
       <% end %>  </div>
+
 
 
   <div class="field">

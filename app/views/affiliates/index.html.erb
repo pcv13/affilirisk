@@ -5,6 +5,7 @@
 <table>
   <thead>
     <tr>
+      <th>ID</th>
       <th>Name</th>
       <th>Logolink</th>
       <th>Moneyconfirmed</th>
@@ -15,6 +16,7 @@
   <tbody>
     <% @affiliates.each do |affiliate| %>
       <tr>
+        <td><%= affiliate.id %></td>
         <td><%= affiliate.name %></td>
         <td><%= affiliate.logoLink %></td>
         <td><%= affiliate.moneyConfirmed %></td>

@@ -17,11 +17,7 @@ html{ height:100%; }
 body{ min-height:100%; padding:0; margin:0; position:relative; }
 
 body::after{ content:''; display:block; height:100px; }
-{ 
-  -moz-box-sizing: border-box; 
-  -webkit-box-sizing: border-box; 
-	box-sizing: border-box; 
-}
+
 
 body {
   background:#fff;

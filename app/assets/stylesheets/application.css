@@ -13,8 +13,11 @@
  *= require_tree .
  *= require_self
  */
-html{ height:100%; }
-body{ min-height:100%; padding:0; margin:0; position:relative; }
+html{ height:100%;
+font-family: "Trebuchet MS", Helvetica, sans-serif;
+ box-sizing: border-box;}
+
+body{ min-height:100%; padding:0; margin:0; position:relative;font-family:"Trebuchet MS", Helvetica, sans-serif; }
 
 body::after{ content:''; display:block; height:100px; }
 
@@ -22,8 +25,10 @@ body::after{ content:''; display:block; height:100px; }
 body {
   background:#fff;
 }
+/*
 header{ background:#f0f3f5; height:50px; 
-  top:0;}
+  top:0;font-family: "Trebuchet MS", Helvetica, sans-serif;}
+*/
 
 
 
@@ -34,7 +39,7 @@ header{ background:#f0f3f5; height:50px;
 	padding: 10px 22px;
   margin: 0px 10px 10px 0px;
   float: left;
-	
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
 	font-size: 20px;
 	color: #FFF;
 	text-decoration: none;	
@@ -145,7 +150,7 @@ thead {
 }
 
 thead th {
-  font-family: 'Patua One', cursive;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;;
   font-size:16px;
   font-weight:400;
   color:#0C1114;
@@ -157,8 +162,70 @@ thead th {
 
 }
 
+h2{
+      margin: 64px auto;
+      text-align: center;
+}
+
+html { font-size: 62.5%; }
+
+body { 
+  margin: 0;
+  font-size: 1.8rem;
+  font-family: 'Avenir', Arial, sans-serif;
+}
+
+.main-header {
+    color:#0C1114;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 6rem;
+  background: #f2f2f2;
+  line-height: 6rem;
+  transform: translateY(0);
+  transform: translate3d(0,0,0);
+  transition: .25s transform;
+  backface-visibility: hidden;
+}
+
+.heads-up {
+  transform: translateY(-6rem);
+  transform: translate3d(0,-6rem,0);
+}
+
+.main-header h1 {
+  float: left;
+  font-size: 1.4rem;
+  margin: 0 0 0 1rem;
+  text-transform: uppercase;
+}
+
+.main-header nav {
+  float: right;
+  font-size: 1.4rem;
+}
+
+.main-header nav ul { 
+  margin-top: 0;
+    margin-bottom: 1rem;
+  padding: 0; 
+}
+
+.main-header nav li {
+  display: inline-block;
+  padding: 0 2rem;
+    border-bottom: 1rem;
+  border-left: .1rem solid #555;
+}
+
+main { 
+  padding: 10rem 6rem;
+  background: #EEE;
+}
+
 tbody tr td {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;;
   font-weight:400;
   color:#5f6062;
   font-size:13px;

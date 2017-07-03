@@ -135,7 +135,15 @@ header{ background:#f0f3f5; height:50px;
 	color : white;
 }
 
-
+.ris2{
+    margin-left: 37.5%;
+    margin-top: -3%
+   
+}
+.ris{
+     margin-bottom: 8%;
+   
+}
 
 
 
@@ -226,6 +234,7 @@ thead th {
 h2{
       margin: 64px auto;
       text-align: center;
+      font-family: "Lato Light", Light, sans-serif;
 }
 
 html { font-size: 62.5%; }

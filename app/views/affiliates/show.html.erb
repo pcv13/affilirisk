@@ -24,9 +24,16 @@
 <p></p>
 <p></p>
 
-<!--<h2 class="discover"> Discover you no-payment risk </h2 >-->
- <div style=" text-align: center;"><p></p>
-<img src="/Risk.png" alt="AFFILIRISKlLOGO" style="width:30%;height:30%"></div><
+<h2 class="discover"> Discover you no-payment risk </h2 >
+ <div style="">
+     <p class="ris2
+"><a href="#" class="action-button s0 ris">U</a>    <a href="#" class="action-button s1 ris">L</a>
+         <a href="#" class="action-button s2 ris">M</a>    <a href="#" class="action-button s3 ris">H</a>   
+         <a href="#" class="action-button s4 ris">V</a>
+     </p>
+     
+<!--<img src="/Risk.png" alt="AFFILIRISKlLOGO" style="width:30%;height:30%">-->
+</div>
 
 <table class="container">
   <thead>
@@ -41,7 +48,7 @@
   <tbody>
     <% @offers.each do |request| %>
       <tr>
-    <%=
+    <%
       if request.risk==0
         @text="U"
         @textSub="U: No enough data"
@@ -63,7 +70,7 @@
         @textSub="V: There is more than 90% of non-payment probability"
       end 
     %>
-         <%=
+         <%
       if request.finalStatus==0
         @textS="Confirmed"
       end  

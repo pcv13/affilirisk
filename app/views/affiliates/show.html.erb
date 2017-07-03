@@ -5,8 +5,10 @@
 </header>      
 
 <header class="main-header">
-  <h1><img src="/AFFILIRISKlLOGO.jpg" alt="AFFILIRISKlLOGO" style="width:300px;height:60px"></h1>
-  <nav>
+  <h1><img src="/AFFILIRISKlLOGO.jpg" alt="AFFILIRISKlLOGO" style="width:350px;height:60px"></h1>
+
+    <nav>
+      
     <ul>
       <img src="/mobiusi.png" alt="AFFILIRISKlLOGO" style="width:60px;height:60px">
        
@@ -14,7 +16,9 @@
       <li><%= @M %></li>
       <li><%= @affiliate.logoLink %></li>
     </ul>
+      
   </nav>
+    
 </header>
 
 <h2 class="discover"> Discover you no-payment risk </h2 >
@@ -65,11 +69,11 @@
         <td><%= request.name %></td>
         <td><%= request.installs %></td>
         <td><%= request.revenue %></td>
-        <td>  <a href="#" class="action-button s<%= request.risk %>"><%= @text %></a>
+        <td>  <a href="#" class="action-button s<%= request.risk %>" data-tooltip="I’m the tooltip text."><%= @text %>  </a>
           </td>
 
         <td><%= @textS %></td>
-        <td><a href="#" class="action-button s<%= request.risk %>"><%= request.comment1 %></a>
+        <td><a href="#" class="action-button s<%= request.risk %>" data-tooltip="<%= request.subComent1 %>"><%= request.comment1 %></a>
 </td>
       </tr>
     <% end %>

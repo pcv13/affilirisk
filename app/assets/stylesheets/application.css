@@ -49,36 +49,36 @@ header{ background:#f0f3f5; height:50px;
 
 .s0
 {
-	background-color: #82A2ED;
+	background-color: #23c6c8;
     color : white;
 }
 
 .s0:hover
 {
-	background-color: #82A2ED;
+	background-color: #23c6c8;
     color : white;
 }
 
 .s0:visited
 {
-	background-color: #82A2ED;
+	background-color: #23c6c8;
     color : white;
 }
 
 
 .s1
 {
-	background-color: #82BF56;
+	background-color: #1ab394;
 	color : white;
 }
 .s1:hover
 {
-	background-color: #82BF56;
+	background-color: #1ab394;
 	color : white;
 }
 .s1:visited
 {
-	background-color: #82BF56;
+	background-color: #1ab394;
 	color : white;
 }
 
@@ -102,36 +102,36 @@ header{ background:#f0f3f5; height:50px;
 
 .s3
 {
-	background-color: #FF852F;
+	background-color: #f0ad4e;
 	color : white;
 }
 
 .s3:hover
 {
-	background-color: #FF852F;
+	background-color: #f0ad4e;
 	color : white;
 }
 
 .s3:visited
 {
-	background-color: #FF852F;
+	background-color: #f0ad4e;
 	color : white;
 }
 .s4
 {
-	background-color: #E74C3C;
+	background-color: #d9534f;
 	color : white;
 }
 
 .s4:hover
 {
-	background-color: #E74C3C;
+	background-color: #d9534f;
 	color : white;
 }
 
 .s4:visited
 {
-	background-color: #E74C3C;
+	background-color: #d9534f;
 	color : white;
 }
 

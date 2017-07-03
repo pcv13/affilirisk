@@ -246,6 +246,13 @@ body {
   margin: 0;
   font-size: 1.8rem;
   font-family: "Lato", Light, sans-serif;
+   
+}
+.subBody{
+    margin-bottom: 10%;
+}
+.margina{
+    margin: 3px;
 }
 
 .main-header {
@@ -334,13 +341,48 @@ footer{
   bottom:0; 
   right: 0;    
   width:100%; 
-line-height: 2em; 
+  font-size: 15pX;
+  weight:300px;
+margin-top: 20%;
     
 }
+pre{
+    background-color:#f2f2f2; 
+      font-size:13px;
+      font-family: "Lato", Light, sans-serif;
+}
 footer{ background:#f2f2f2; }
-
+/*
 .Fott{
     margin-left: 50px;
      margin-top: 15px;
     margin-bottom: 15px;
+}*/
+
+    #footer {
+bottom: 0;
+        width: 100%;
+        margin: auto;
+    }
+    .footerFloat {
+	width: 100%;
+    }
+@media all and (min-width: 950px) {
+    #footer {
+
+        width: 980px;
+        margin: auto;
+    } 
+    .footerFloat {
+	width: 33%;
+	float: left;
+    }
 }
+
+#wrapper {
+    
+	background-color: #f2f2f2;
+	width: 100%;
+    overflow:hidden;
+    bottom: 0;
+} 

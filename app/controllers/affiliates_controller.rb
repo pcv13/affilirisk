@@ -13,7 +13,7 @@ class AffiliatesController < ApplicationController
   def show
       @offers = Offer.all
       @MyC = @offers.where(finalStatus:0)
-
+      @aff=@affiliate.name
       @offers = Offer.where(ownerID:@affiliate.id)
       @M=0
       @text=""  

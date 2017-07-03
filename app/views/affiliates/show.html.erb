@@ -39,18 +39,23 @@
     <%=
       if request.risk==0
         @text="U"
+        @textSub="U: No enough data"
       end  
       if request.risk==1
         @text="L"
+        @textSub="L: There is only a 10% non payment probability.  "
       end  
       if request.risk==2
         @text="M"
+        @textSub="M: There is more than 40% of non-payment probability."
       end  
       if request.risk==3
         @text="H"
+        @textSub="H: There is more than 70% of non-payment probability."
       end 
       if request.risk==4
         @text="V"
+        @textSub="V: There is more than 90% of non-payment probability"
       end 
     %>
          <%=
@@ -69,7 +74,7 @@
         <td><%= request.name %></td>
         <td><%= request.installs %></td>
         <td><%= request.revenue %></td>
-        <td>  <a href="#" class="action-button s<%= request.risk %>" data-tooltip="I’m the tooltip text."><%= @text %>  </a>
+        <td>  <a href="#" class="action-button s<%= request.risk %>" data-tooltip="<%= @textSub %>"><%= @text %>  </a>
           </td>
 
         <td><%= @textS %></td>

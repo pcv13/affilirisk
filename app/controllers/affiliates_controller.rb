@@ -16,10 +16,12 @@ class AffiliatesController < ApplicationController
 
       @offers = Offer.where(ownerID:@affiliate.id)
       @M=0
-      @text=""
+      @text=""  
+      @textSub=""
       @textS=""
       @MyC.each do |money|
-          @M =money.revenue + @M
+      @M =money.revenue + @M
+            
       end  
  
   end

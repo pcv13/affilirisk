@@ -14,10 +14,10 @@
  *= require_self
  */
 html{ height:100%;
-font-family: "Trebuchet MS", Helvetica, sans-serif;
+font-family: "Lato ", Light, sans-serif;
  box-sizing: border-box;}
 
-body{ min-height:100%; padding:0; margin:0; position:relative;font-family:"Trebuchet MS", Helvetica, sans-serif; }
+body{ min-height:100%; padding:0; margin:0; position:relative;font-family: "Lato", Light, sans-serif;}
 
 body::after{ content:''; display:block; height:100px; }
 
@@ -39,7 +39,7 @@ header{ background:#f0f3f5; height:50px;
 	padding: 10px 22px;
   margin: 0px 10px 10px 0px;
   float: left;
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-family: "Lato", Light, sans-serif;
 	font-size: 20px;
 	color: #FFF;
 	text-decoration: none;	
@@ -158,7 +158,7 @@ thead {
 }
 
 thead th {
-  font-family: "Trebuchet MS", Helvetica, sans-serif;;
+  font-family: "Lato", Light, sans-serif;
   font-size:16px;
   font-weight:400;
   color:#0C1114;
@@ -242,7 +242,7 @@ html { font-size: 62.5%; }
 body { 
   margin: 0;
   font-size: 1.8rem;
-  font-family: 'Avenir', Arial, sans-serif;
+  font-family: "Lato", Light, sans-serif;
 }
 
 .main-header {
@@ -295,7 +295,7 @@ main {
 }
 
 tbody tr td {
-  font-family: "Trebuchet MS", Helvetica, sans-serif;;
+  font-family: "Lato", Light, sans-serif;
   font-weight:400;
   color:#5f6062;
   font-size:13px;

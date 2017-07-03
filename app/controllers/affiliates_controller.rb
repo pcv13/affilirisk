@@ -29,6 +29,7 @@ class AffiliatesController < ApplicationController
   # GET /affiliates/new
   def new
     @affiliate = Affiliate.new
+    @code = rand(999999999)  
   end
 
   # GET /affiliates/1/edit
@@ -78,12 +79,12 @@ class AffiliatesController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_affiliate
-      @affiliate = Affiliate.find(params[:id])
+      @affiliate = Affiliate.find(params[:id,])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def affiliate_params
-      params.require(:affiliate).permit(:name, :logoLink, :moneyConfirmed)
+      params.require(:affiliate).permit(:name, :logoLink, :moneyConfirmed,:code)
     end
     def offers_params
       params.require(:offer).permit(:name, :ownerID, :installs, :revenue, :risk, :finalStatus, :comment1, :comment2)

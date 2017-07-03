@@ -25,6 +25,10 @@
     <%= f.label :moneyConfirmed %>
     <%= f.text_field :moneyConfirmed %>
   </div>
+  <div class="field">
+    <%= f.label :code %>
+    <%= f.text_field :code, :value => @code %>   
+  </div>
 
   <div class="actions">
     <%= f.submit %>

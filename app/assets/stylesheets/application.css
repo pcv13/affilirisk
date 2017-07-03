@@ -163,7 +163,7 @@ thead th {
   font-size:16px;
   font-weight:400;
   color:#0C1114;
-  text-align:left;
+  text-align:center;
   padding:20px;
   background:#CFD9E0;
   border-top:1px solid #858d99;
@@ -311,7 +311,7 @@ tbody tr td {
   font-weight:400;
   color:#5f6062;
   font-size:13px;
-  padding:20px 20px 20px 20px;
+  padding:5px 5px 5px 5px;
   border-bottom:1px solid #e0e0e0;
   
 }

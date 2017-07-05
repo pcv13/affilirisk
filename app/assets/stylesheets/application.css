@@ -45,7 +45,9 @@ header{ background:#f0f3f5; height:50px;
 	text-decoration: none;	
 }
 
-
+.left{
+    float: left;
+}
 
 .s0
 {

@@ -45,7 +45,7 @@
     <div class="field select_create">
       <%= f.label :finalStatus %><br>
         <%= f.select(:finalStatus) do %>
-        <% [['Confirmed','0'],['Hold','1'],['Reduction','2'],].each do |c| -%>
+        <% [['Confirmed','0'],['Hold','1'],['Scrub','2'],].each do |c| -%>
           <%= content_tag(:option, c.first, value: c.last) %>
         <% end %>
       <% end %>  </div>
